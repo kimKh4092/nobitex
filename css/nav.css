@@ -1,24 +1,43 @@
 .navigation-bar {
     background-color: rgb(23, 19, 19);
     width: 100vw;
-    height: 8vh;
+    height: 65px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
-    ;
+
+}
+
+.nav-div {
+    background-color: rgb(23, 19, 19);
+    width: 90vw;
+    height: 65px;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.nav-content {
+    background-color: rgb(23, 19, 19);
+    width: 50vw;
+    height: 65px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .logo {
-    margin-right: 10px;
-    height: 8vh;
+
+    margin: 20px;
+    height: 22px;
 }
+
 
 .link {
     color: white;
     margin: 20px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -26,50 +45,79 @@
     color: rgb(147, 61, 227);
 }
 
+
 .signlog {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    width: 20vw;
+    height: 65px;
+    margin-left: 15px;
 
 }
 
-
-
-.signup {
-    margin-right: 650px;
-    margin-left: 10px;
-    text-decoration-line: none;
-    color: white;
-}
-
-.signup:hover {
-    color: white;
-}
 
 .login {
-    margin: 13px;
+    margin-left: 5px;
+
+    color: white;
+}
+
+.login:hover {
+    color: white;
+}
+
+.signup {
+    margin: 15px;
     color: white;
     background-color: rgb(147, 61, 227);
     border: 0;
     border-radius: 5px;
-    width: 5.5rem;
+    width: 5.7rem;
     height: 2.2rem;
     outline: 0;
     cursor: pointer;
+    font-size: 0.9rem;
 
 }
 
-.login:hover {
+.signup:hover {
     color: white;
     background-color: rgb(120, 40, 196);
 }
 
 
+/* tablet view */
+@media screen and (max-width: 1200px) {
+    .nav-content {
+        display: none;
+    }
 
+    .login {
+        margin: 25px;
+        font-size: 0.7rem;
+        margin-left: 5px;
+
+    }
+
+    .signup {
+        margin: 20px;
+        font-size: 0.7rem;
+        width: 4.3rem;
+        height: 1.6rem;
+        margin-right: 10px;
+
+    }
+}
+
+/* dropdown */
 .dropbtn {
     background-color: rgb(23, 19, 19);
     color: white;
-    margin: 20px;
-    font-size: 0.9rem;
+    margin-right: 5px;
+    width: 160px;
+    height: 60px;
+    font-size: 0.95rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: none;
     cursor: pointer;
 }
@@ -77,6 +125,7 @@
 .dropdown {
     position: relative;
     display: inline-block;
+
 }
 
 
@@ -93,12 +142,13 @@
 }
 
 
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 0.9rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .dropdown-content a:hover {
